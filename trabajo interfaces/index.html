@@ -28,6 +28,17 @@
     <script src="js/funciones.js"></script>
   </head>
   <body>
+      <!-- ALERT - Alerta que avisa de la no funcionabilidad de la página y que puede ser desechada -->
+
+      <div class="alert alert-warning alert-dismissible fade show mb-0" role="alert">
+			  <strong>Pagina en desarollo</strong> Disfrute mi poca capacidad artistica
+			  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			    <span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+
+			<div class="bs-example">
+        
    
     
 
@@ -247,8 +258,80 @@
               </div>
             </div>
           </div>
-                
-              
+          <!-- COLLAPSE - Al pulsar en el botón, aparece el div con torneos -->
+          <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#divTorneo" aria-expanded="false" aria-controls="collapseExample">
+            Torneo
+       </button>
+       </div>
+     </div>	
+     <div class="row collapse" id="divTorneo">
+
+       <div class="col-auto">
+       <div class="card bg-primary" style="width: 20rem;">
+         <img class="card-img-top" src="img/card.png" alt="ESTAS INTERESADO?">
+         <div class="card-body">
+           <p class="card-text border bg-light text-center font-weight-bold">Quiere disfrutar de la experiencia magic definitiva? Disfruta nuestros torneos</p>
+           <div class="mb-2">
+
+             <!-- BADGES - Etiquetas que en este caso informan de un torneo -->
+
+             <span class="badge badge-danger">Apuntarse</span>
+             <span class="badge badge-success">Reglamento</span>
+             <span class="badge badge-pill badge-primary">Saber mas</span>
+           </div>							    
+           <a href="" class="btn btn-light border text-center">calendario</a>
+         </div>
+       </div>
+     </div>
+       <div class="col-auto">
+      </div>
+      </div>
+      </div>
+      <!-- FORM - Formulario para el registro de usuarios -->
+
+            <!-- VALIDACION FORM - En este formulario se ha añadido validación, si un campo no está relleno se coloreará de rojo y si lo está, de verde -->
+
+            <form class="form-horizontal bg-primary mt-4 p-4 text-center border border-light rounded bg-light needs-validation" id="formRegistro" novalidate>
+              <fieldset>
+  
+              <!-- Form Name -->
+              <legend class="mb-4"><h2><u>APUNTETE A NUESTROS TORNEOS SI ERES MIEMBRO SI NO RELLENA ESTE FORMULARIO Y SE USUARIO </u></h2></legend>
+  
+              <!-- Text input-->
+              <div class="form-group border border-dark rounded bg-primary">
+                <label class="col-auto control-label font-weight-bold" for="nombreusuario">Nombre de Usuario</label>  
+                <div class="col-md-4 mx-auto">
+                  <input id="nombreusuario" name="nombreusuario" type="text" placeholder="" class="form-control input-md" required>
+                  <span class="help-block"><small>Introduce el nombre de usuario</small></span>  
+                </div>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>              
+              </div>
+  
+              <!-- Password input-->
+              <div class="form-group border border-dark rounded bg-primary">
+                <label class="col-auto control-label font-weight-bold" for="contraseñausuario">Contraseña de Usuario</label>
+                <div class="col-md-4 mx-auto">
+                  <input id="contraseñausuario" name="contraseñausuario" type="password" placeholder="" class="form-control input-md" required>
+                  <span class="help-block"><small>Introduce la contraseña de usuario</small></span>
+                </div>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>              
+              </div>
+  
+              <!-- Text input-->
+              <div class="form-group border border-dark rounded bg-primary">
+                <label class="col-auto control-label font-weight-bold" for="correousuairo">Correo del Usuario</label>  
+                <div class="col-md-4 mx-auto">
+                  <input id="correousuairo" name="correousuairo" type="text" placeholder="" class="form-control input-md" required>
+                  <span class="help-block"><small>Introduce el correo de usuario</small></span>  
+                </div>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>              
+              </div>
    
    
    
@@ -263,7 +346,26 @@
    
    
    
-   
- 
+   <!-- BREADCRUMB - Guía de en qué parte de la navegación de la página estás, con links directos a la parte de donde proviene la página actual -->
+
+			<!-- UTILIDAD DE BORDE - Se ha usado la utilidad de borde en diferentes partes, como por ejemplo, en el breadcrumb -->
+
+			<!-- TAMAÑO DE COLUMNA POR CADA RESPONSIVE BREAKPOINT - Se ha usado el breadcrumb para especificar un tamaño de columna específico por determinados tamaños de pantalla -->
+
+			<!-- MARGIN Y PADDING POR CADA RESPONSIVE BREAKPOINT - Se ha usado el breadcrumb para especificar un margin y padding específicos por determinados tamaños de pantalla -->
+
+			<div aria-label="breadcrumb border border-light rounded col-xl-3 col-lg-3 col-md-4 col-sm-5 col-7">
+			  <ol class="breadcrumb p-1 p-xl-3 p-lg-3 p-md-2 p-sm-2 my-4 my-xl-5 my-lg-4 my-md-3 my-sm-3 bg-primary border col-xl-3 col-lg-3 col-md-4 col-sm-5 col-7">
+			    <li class="breadcrumb-item active"><a href="index.html" class="text-dark col-auto">Portada</a></li>
+			  </ol>
+			</div>			
+
+		<footer class="mainfooter bg-primary mt-4 col-md-12">
+			<div class="row">
+				<div class="col-md-12 mt-2">
+					<p class="text-center">&copy; Derechos y Propiedad a MTG.sa .</p>
+				</div>
+			</div>
+		</footer>	
 </body>
 </html>
