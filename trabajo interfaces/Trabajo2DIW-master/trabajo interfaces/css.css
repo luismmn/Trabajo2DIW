@@ -1,0 +1,51 @@
+@media(max-width:500px){
+
+    .footer{
+        float:left;
+        width:109%;
+        margin-left:-5%;
+        border-top: 4px solid black;
+    }
+}
+
+@mixin paddingmargin($n){
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: $body_color;
+    @include paddingmargin(0);
+}
+nav {
+    border-bottom: 4px pink;
+  }
+  @function seleccionar($lista,$indice){
+    $resultado: black;
+    @for $i from 1 through length($lista) {
+        @if $indice == $i{
+            $resultado: nth($lista,$i);
+        }
+    }
+    @return $resultado;
+}
+
+$border_width: 5px;
+$colors: green,black,white,red;
+$border_color: seleccionar($colors,2) ;
+
+%border_bottom_style{
+    border-bottom: $border_width solid $border_color;
+}
+
+%border_top_style{
+    border-top: $border_width solid $border_color;
+}
+
+nav{
+    @extend %border_bottom_style;
+}
+
+footer{
+    @extend %border_top_style;
+}

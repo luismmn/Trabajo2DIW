@@ -1,0 +1,57 @@
+.sliders{
+  background-color: rgb(255, 255, 255);
+  border-color: blue;
+  border-style: dashed hidden dashed hidden;
+  padding-top: 80px;
+  padding-right: 10px;
+  padding-bottom: 50px;
+  padding-left: 10px;
+  
+}
+.main{
+  background-color: rgb(255, 255, 255);
+}
+.navbar{
+    background-color: rgb(182, 152, 199);
+}
+.footerColour{
+  background-color: rgb(101, 74, 117);
+
+}
+.entreSlider{
+  background-color: rgb(255, 255, 255);
+}
+li a{
+    color: black;
+    font-family: 'Nunito', sans-serif;
+}
+li a:hover{
+    background-color: rgb(255, 255, 255);
+    color:  rgb(63, 11, 93);
+    transition: 1s;
+    border-radius: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 35px;
+  width: 35px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 2px solid black;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 18px;
+  color: black;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 18px;
+  color: black;
+}

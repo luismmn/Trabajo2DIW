@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
+  
+    <!-- Fuente -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet" />
+  
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+  
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"></script>
+    <!--fontawesome -->
+    <script src="https://kit.fontawesome.com/eb7b540af7.js" crossorigin="anonymous"></script>
+    <!-- javascript funciones -->
+    <script src="js/funciones.js"></script>
+  </head>
+  <body>
+      <!-- ALERT - Alerta que avisa de la no funcionabilidad de la página y que puede ser desechada -->
+
+      <div class="alert alert-warning alert-dismissible fade show mb-0" role="alert">
+			  <strong>Pagina en desarollo</strong> Disfrute mi poca capacidad artistica
+			  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			    <span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+
+			<div class="bs-example">
+        
+   
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+        <!-- TOOLTIP - Al pasar por encima de este link, se muestra un texto informativo de hacia donde se dirige -->
+
+        <a href="otrospreoductos.html" class="nav-item nav-link active" data-toggle="tooltip" data-placement="bottom" title="Ir a la pagina de otros productos">mas productos</a>
+
+        <a href="nuestros grupos.html" class="nav-item nav-link" data-toggle="tooltip" data-placement="bottom" title="Ir a la pagina de conocenos">conocenos</a>
+
+        <a href="contacta.html" class="nav-item nav-link" data-toggle="tooltip" data-placement="bottom" title="Ir a la pagina de contacta">contacta</a>
+
+        <a href="perfil.html" class="nav-item nav-link" data-toggle="tooltip" data-placement="bottom" title="Ir a la pagina de perfil">perfil</a>
+        
+        <!-- POPOVER - Al hacer click en el input para introducir el nombre de usuario, aparecerá un texto informativo, que se desechará al hacer click de nuevo en el input -->
+
+        <input type="text" class="form-control" data-toggle="popover" title="Login de usuario" data-content="pon tu usauario" placeholder="Usuario">
+
+      </div>
+    </div>
+      </nav>
+
+      <!-- SLIDERS -->
+    <div class="sliders">
+      <!-- breadcrumb -->
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb bg-white">
+          <li class="breadcrumb-item active" aria-current="page">Home</li>
+        </ol>
+      </nav>
+      <div class="d-flex justify-content-center">
+        <div class="row content">
+          <!-- SLIDER1 -->
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 p-3">
+            <section id="slider">
+              <div id="fotoSelecionada" class="carousel slide " data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#fotoSelecionada" data-slide-to="0" class="active"></li>
+                  <li data-target="#fotoSelecionada" data-slide-to="1"></li>
+                  <li data-target="#fotoSelecionada" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="mazo3.jpg" alt="" width="200px" height="500px" />
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="mazo2.jpg" alt="" width="200px" height="500px" />
+                  </div>
+                  <div class="carousel-item">
+                    <img class="w-100" src="mazo1.jpg" alt="" width="200px" height="500px" />
+                  </div>
+                </div>
+                <!-- DESPLAZAMIENTO -->
+                <a class="carousel-control-prev" href="#fotoSelecionada" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next" href="#fotoSelecionada" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+              </div>
+            </section>
+
+             <!-- MODAL COMPRA -->
+             <button type="button" class="btn btn-primary mt-5" data-toggle="modal" data-target="#modalCompra">
+              Comprar
+            </button>
+          </div>
+
+          <!-- #DUDA COMO PODRIA HACER PARA QUE LOS DOS SLIDERS, 1 Y 2 SE CENTRARAN PARA EL TAMAÑO EN QUE ESTAN DE 6 POR PRIMERA VEZ Y EL SEGUNDO DE 6¿?¿?¿?¿? -->
+          <!-- FIN SLIDER1 -->
+          <!-- entreSlider -->
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 p-3 col align-self-center">
+            <div class="entreSlider">
+              <!-- JUMBOTRON -->
+              <div class="jumbotron jumbotron-fluid" style="background-color:gray;">
+                <div class="container">
+                  <h1 class="display-4 text-center">
+                   DESCARGESE LAS REGLAS AQUI
+                  </h1>
+                  <p class="lead text-center">Y DISFRUTE NUESTROS PRODUCTOS</p>
+                </div>
+              </div>
+            <button type="button" class="btn btn-primary mt-5" data-toggle="modal" data-target="#modalCompra">
+              Descargar 
+            </button>
+            
+            </div>
+          </div>
+          <!-- FIN entreSlider -->
+          <!-- SLIDER2 -->
+          <!-- UTILIDADES EMBED - Se ha insertado un video en la página mediante utilidades embed -->
+
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 p-3 embed-responsive embed-responsive-16by9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/b5W9t62t10I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>       
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- FIN SLIDER2 -->
+      
+    </div>
+    <!-- FIN SLIDERS -->
+    <!-- MAIN -->
+
+
+      
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card mb-3 box-shadow">
+            <img class="card-img-top w-10" src="carta1.png" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted"></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card mb-3 box-shadow">
+            <img class="card-img-top" src="carta2.png" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted"></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card mb-3 box-shadow">
+            <img class="card-img-top" src="carta3.png" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted"></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card mb-3 box-shadow">
+            <img class="card-img-top" src="carta4.png" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted"></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card mb-3 box-shadow">
+            <img class="card-img-top" src="carta5.png" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted"></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card mb-3 box-shadow">
+            <img class="card-img-top" src="carta6.png" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- COLLAPSE - Al pulsar en el botón, aparece el div con torneos -->
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#divTorneo" aria-expanded="false" aria-controls="collapseExample">
+            Torneo
+       </button>
+       </div>
+     </div>	
+     <div class="row collapse" id="divTorneo">
+
+       <div class="col-auto">
+       <div class="card bg-primary" style="width: 20rem;">
+         <img class="card-img-top" src="img/card.png" alt="ESTAS INTERESADO?">
+         <div class="card-body">
+           <p class="card-text border bg-light text-center font-weight-bold">Quiere disfrutar de la experiencia magic definitiva? Disfruta nuestros torneos</p>
+           <div class="mb-2">
+
+             <!-- BADGES - Etiquetas que en este caso informan de un torneo -->
+
+             <span class="badge badge-danger">Apuntarse</span>
+             <span class="badge badge-success">Reglamento</span>
+             <span class="badge badge-pill badge-primary">Saber mas</span>
+           </div>							    
+           <a href="" class="btn btn-light border text-center">calendario</a>
+         </div>
+       </div>
+     </div>
+       <div class="col-auto">
+      </div>
+      </div>
+      </div>
+      <!-- FORM - Formulario para el registro de usuarios -->
+
+            <!-- VALIDACION FORM - En este formulario se ha añadido validación, si un campo no está relleno se coloreará de rojo y si lo está, de verde -->
+
+            <form class="form-horizontal bg-primary mt-4 p-4 text-center border border-light rounded bg-light needs-validation" id="formRegistro" novalidate>
+              <fieldset>
+  
+              <!-- Form Name -->
+              <legend class="mb-4"><h2><u>APUNTETE A NUESTROS TORNEOS SI ERES MIEMBRO SI NO RELLENA ESTE FORMULARIO Y SE USUARIO </u></h2></legend>
+  
+              <!-- Text input-->
+              <div class="form-group border border-dark rounded bg-primary">
+                <label class="col-auto control-label font-weight-bold" for="nombreusuario">Nombre de Usuario</label>  
+                <div class="col-md-4 mx-auto">
+                  <input id="nombreusuario" name="nombreusuario" type="text" placeholder="" class="form-control input-md" required>
+                  <span class="help-block"><small>Introduce el nombre de usuario</small></span>  
+                </div>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>              
+              </div>
+  
+              <!-- Password input-->
+              <div class="form-group border border-dark rounded bg-primary">
+                <label class="col-auto control-label font-weight-bold" for="contraseñausuario">Contraseña de Usuario</label>
+                <div class="col-md-4 mx-auto">
+                  <input id="contraseñausuario" name="contraseñausuario" type="password" placeholder="" class="form-control input-md" required>
+                  <span class="help-block"><small>Introduce la contraseña de usuario</small></span>
+                </div>
+                <div class="valid-feedback">
+                  Correcto
+                </div>              
+              </div>
+  
+              <!-- Text input-->
+              <div class="form-group border border-dark rounded bg-primary">
+                <label class="col-auto control-label font-weight-bold" for="correousuairo">Correo del Usuario</label>  
+                <div class="col-md-4 mx-auto">
+                  <input id="correousuairo" name="correousuairo" type="text" placeholder="" class="form-control input-md" required>
+                  <span class="help-block"><small>Introduce el correo de usuario</small></span>  
+                </div>
+                <div class="valid-feedback">
+                  Correcto
+                </div>              
+              </div>
+               <!-- Button -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="botonregistrar"><b>¡Registrate!</b></label>
+              <div class="col-auto">
+                <button id="botonregistrar" name="botonregistrar" class="btn btn-primary" type="submit" data-toggle="modal" data-target="#myModal">Enviar</button>
+              </div>
+            </div>
+
+            </fieldset>
+            </form>                        
+
+        </div>  
+
+              <!-- INPUT GROUP -->
+
+              <div class="input-group">
+
+                <!-- BUTTON GROUP - Los botones de Login y Registro están unidos -->
+
+                <div class="btn-group" role="group">
+
+                  <!-- BUTTON - Al hacer click en este botón específico, te lleva a la página de registro -->
+
+            <button type="button" class="btn bg-primary" onClick="location.href='registro.html'" data-toggle="tooltip" data-placement="bottom" title="Ir a la pagina de registro">Registrate</button>
+
+                    <button type="button" class="btn bg-primary mr-2" data-toggle="tooltip" data-placement="bottom" title="Loguearte">Login</button>
+
+                  </div>	
+
+              </div>
+              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Registro</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      Estás a punto de registrarte, ¿estas seguro?
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn bg-primary" data-dismiss="modal">No</button>
+                      <button type="button" class="btn bg-primary" data-dismiss="modal">Si</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    <!-- LISTGROUP - Listgroup que facilita la navegación entre los mazos de esta página -->
+
+    <div class="list-group" id="myScrollspy">
+      <a class="list-group-item btn btn-light font-weight-bold" href="#mazo1">mazo 1</a>
+      <a class="list-group-item btn btn-light font-weight-bold" href="#mazo2">mazo 2</a>
+      <a class="list-group-item btn btn-light font-weight-bold" href="#mazo3">mazo 3</a>
+      <a class="list-group-item btn btn-light font-weight-bold" href="#mazo4">mazo 4</a>
+      <a class="list-group-item btn btn-light font-weight-bold" href="#mazo5">mazo 5</a>
+   </div>
+</div>
+<div class="col-8">
+
+   <!-- SCROLLSPY - Un scrollspy en el que se muestra las noticias individualmente y que está asociado al listgroup de la lista de mazos -->
+
+   <div data-spy="scroll" data-target="#myScrollspy" data-offset="10" class="mb-4 bg-light"
+      style="height:400px;overflow-y: scroll;padding:5px; border: 1px solid #ccc;">
+      <h5 id="noticia1">Esta es la lista de los mejores mazos del meta juego</h5>
+   </div>
+</div>
+
+   
+   <!-- PROGRESS - Barra de progreso que informa gráficamente de el avance que llevas en el registro -->
+
+   <div class="progress">
+    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="d-flex justify-content-start mt-2">
+    <div class="mr-2">
+  </div>
+  </div>
+  
+  <div>
+
+    <!-- PAGINATION - mostraria las diferentes paginas de mazos del meta -->	
+
+    <ul class="pagination col-md-3 mx-auto">
+      <li class="page-item">
+        <button class="page-link" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+          <span class="sr-only">Previous</span>
+        </button>
+      </li>
+      <li class="page-item"><button class="page-link" id="botonpg1">1</button></li>
+      <li class="page-item"><button class="page-link" id="botonpg2">2</button></li>
+      <li class="page-item">
+        <button class="page-link" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+          <span class="sr-only">Next</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+      </div> 
+      <div class="col-md-3">
+      </div>
+    </div>
+  </div>
+   <!-- MEDIA OBJECT - se mostraria de forma resumida los datos de las cartas -->
+
+   <div class="media">
+    <img class="align-self-center mr-5 ml-2" src="img" alt="Profile Picture">
+    <div class="media-body">
+      <h5 class="my-4"><u>mazo trasgos mono rojo</u></h5>
+      <p class="my-3"><b>tierras</b> 20</p>
+      <p class="my-3"><b> hechizos:</b> 4</p>
+      <p class="my-3"><b>conjuros:</b> 8</p>
+      <p class="my-3"><b>instantaneos:</b> 8</p>
+      <p class="my-3"><b>criaturas:</b> 20</p>
+      <p class="my-3"><b>artefactos:</b> 0</p>
+      <p class="my-3"><b>sideboard:</b> 15</p>
+    </div>
+  </div>
+
+</div>
+<!-- TABLA - Tabla Bootstrap que muestra mazos -->
+
+<table class="table table-responsive table-hover table-striped table-bordered" id="tabla1">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Luvia de fuego</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>tierras</td>
+      <td>20</td>
+
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>artefactos</td>
+      <td>0</td>
+
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>hechizos</td>
+      <td>25</td>
+    </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>criaturas</td>
+        <td>15</td>
+      </tr>								    
+  </tbody>
+</table>
+</div>
+<div class="col-4">
+  <p class="font-weight-bold text-center">top 2</p>
+<table class="table table-responsive table-hover table-striped table-bordered" id="tabla2">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">del cementerio si se sale</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>tierras</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>artefactos</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>hechizos</td>
+      <td>15</td>
+    </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td> criaturas</td>
+        <td>20</td>
+      </tr>								    
+  </tbody>
+</table>
+</div>	
+<div class="col-4">
+  <p class="font-weight-bold text-center">top 3</p>
+<table class="table table-responsive table-hover table-striped table-bordered" id="tabla3">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">elfos de 3 en 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>tierras</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>artefactos</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>hechizos</td>
+      <td>8</td>
+    </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>criaturas</td>
+        <td>30</td>
+      </tr>								    
+  </tbody>
+</table>
+</div>											
+</div>    					
+</div>
+
+<div id="topsmazos">
+<div class="row-12">
+
+   
+   
+   <!-- BREADCRUMB - Guía de en qué parte de la navegación de la página estás, con links directos a la parte de donde proviene la página actual -->
+
+			<!-- UTILIDAD DE BORDE - Se ha usado la utilidad de borde en diferentes partes, como por ejemplo, en el breadcrumb -->
+
+			<!-- TAMAÑO DE COLUMNA POR CADA RESPONSIVE BREAKPOINT - Se ha usado el breadcrumb para especificar un tamaño de columna específico por determinados tamaños de pantalla -->
+
+			<!-- MARGIN Y PADDING POR CADA RESPONSIVE BREAKPOINT - Se ha usado el breadcrumb para especificar un margin y padding específicos por determinados tamaños de pantalla -->
+
+			<div aria-label="breadcrumb border border-light rounded col-xl-3 col-lg-3 col-md-4 col-sm-5 col-7">
+			  <ol class="breadcrumb p-1 p-xl-3 p-lg-3 p-md-2 p-sm-2 my-4 my-xl-5 my-lg-4 my-md-3 my-sm-3 bg-primary border col-xl-3 col-lg-3 col-md-4 col-sm-5 col-7">
+			    <li class="breadcrumb-item active"><a href="index.html" class="text-dark col-auto">Portada</a></li>
+			  </ol>
+			</div>			
+
+		<footer class="mainfooter bg-primary mt-4 col-md-12">
+			<div class="row">
+				<div class="col-md-12 mt-2">
+					<p class="text-center">&copy; Derechos y Propiedad a MTG.sa .</p>
+        </div>
+        <!-- ICONOS - Iconos de like y dislike, soportados por bootstrap -->
+
+        <small>Like  </small><i class="fa fa-thumbs-up"></i>
+      </div>
+      <div>	
+        <small>Dislike  </small><i class="fa fa-thumbs-down"></i>
+      </div>	
+  </div>  						
+  </button>
+			</div>
+		</footer>	
+</body>
+</html>
