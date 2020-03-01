@@ -58,6 +58,7 @@
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Link</a>
@@ -82,6 +83,22 @@
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form>
         </div>
+        <!-- TOOLTIP - Al pasar por encima de este link, se muestra un texto informativo de hacia donde se dirige -->
+
+        <a href="otrospreoductos.html" class="nav-item nav-link active" data-toggle="tooltip" data-placement="bottom" title="Ir a la pagina de otros productos">mas productos</a>
+
+        <a href="nuestros grupos.html" class="nav-item nav-link" data-toggle="tooltip" data-placement="bottom" title="Ir a la pagina de conocenos">conocenos</a>
+
+        <a href="contacta.html" class="nav-item nav-link" data-toggle="tooltip" data-placement="bottom" title="Ir a la pagina de contacta">contacta</a>
+
+        <a href="perfil.html" class="nav-item nav-link" data-toggle="tooltip" data-placement="bottom" title="Ir a la pagina de perfil">perfil</a>
+        
+        <!-- POPOVER - Al hacer click en el input para introducir el nombre de usuario, aparecerá un texto informativo, que se desechará al hacer click de nuevo en el input -->
+
+        <input type="text" class="form-control" data-toggle="popover" title="Login de usuario" data-content="pon tu usauario" placeholder="Usuario">
+
+      </div>
+    </div>
       </nav>
 
       <!-- SLIDERS -->
@@ -146,15 +163,17 @@
                 </div>
               </div>
             <button type="button" class="btn btn-primary mt-5" data-toggle="modal" data-target="#modalCompra">
-              Descargar
+              Descargar 
             </button>
+            
             </div>
           </div>
           <!-- FIN entreSlider -->
           <!-- SLIDER2 -->
-          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 p-3">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/b5W9t62t10I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <!-- UTILIDADES EMBED - Se ha insertado un video en la página mediante utilidades embed -->
 
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 p-3 embed-responsive embed-responsive-16by9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/b5W9t62t10I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>       
             
           </div>
         </div>
@@ -259,7 +278,7 @@
             </div>
           </div>
           <!-- COLLAPSE - Al pulsar en el botón, aparece el div con torneos -->
-          <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#divTorneo" aria-expanded="false" aria-controls="collapseExample">
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#divTorneo" aria-expanded="false" aria-controls="collapseExample">
             Torneo
        </button>
        </div>
@@ -317,7 +336,7 @@
                   <span class="help-block"><small>Introduce la contraseña de usuario</small></span>
                 </div>
                 <div class="valid-feedback">
-                  Looks good!
+                  Correcto
                 </div>              
               </div>
   
@@ -329,9 +348,59 @@
                   <span class="help-block"><small>Introduce el correo de usuario</small></span>  
                 </div>
                 <div class="valid-feedback">
-                  Looks good!
+                  Correcto
                 </div>              
               </div>
+               <!-- Button -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="botonregistrar"><b>¡Registrate!</b></label>
+              <div class="col-auto">
+                <button id="botonregistrar" name="botonregistrar" class="btn btn-primary" type="submit" data-toggle="modal" data-target="#myModal">Enviar</button>
+              </div>
+            </div>
+
+            </fieldset>
+            </form>                        
+
+        </div>  
+
+              <!-- INPUT GROUP -->
+
+              <div class="input-group">
+
+                <!-- BUTTON GROUP - Los botones de Login y Registro están unidos -->
+
+                <div class="btn-group" role="group">
+
+                  <!-- BUTTON - Al hacer click en este botón específico, te lleva a la página de registro -->
+
+            <button type="button" class="btn bg-primary" onClick="location.href='registro.html'" data-toggle="tooltip" data-placement="bottom" title="Ir a la pagina de registro">Registrate</button>
+
+                    <button type="button" class="btn bg-primary mr-2" data-toggle="tooltip" data-placement="bottom" title="Loguearte">Login</button>
+
+                  </div>	
+
+              </div>
+              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Registro</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      Estás a punto de registrarte, ¿estas seguro?
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn bg-primary" data-dismiss="modal">No</button>
+                      <button type="button" class="btn bg-primary" data-dismiss="modal">Si</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
    
    
    
@@ -341,9 +410,190 @@
    
    
    
+    <!-- LISTGROUP - Listgroup que facilita la navegación entre los mazos de esta página -->
+
+    <div class="list-group" id="myScrollspy">
+      <a class="list-group-item btn btn-light font-weight-bold" href="#mazo1">mazo 1</a>
+      <a class="list-group-item btn btn-light font-weight-bold" href="#mazo2">mazo 2</a>
+      <a class="list-group-item btn btn-light font-weight-bold" href="#mazo3">mazo 3</a>
+      <a class="list-group-item btn btn-light font-weight-bold" href="#mazo4">mazo 4</a>
+      <a class="list-group-item btn btn-light font-weight-bold" href="#mazo5">mazo 5</a>
+   </div>
+</div>
+<div class="col-8">
+
+   <!-- SCROLLSPY - Un scrollspy en el que se muestra las noticias individualmente y que está asociado al listgroup de la lista de mazos -->
+
+   <div data-spy="scroll" data-target="#myScrollspy" data-offset="10" class="mb-4 bg-light"
+      style="height:400px;overflow-y: scroll;padding:5px; border: 1px solid #ccc;">
+      <h5 id="noticia1">Esta es la lista de los mejores mazos del meta juego</h5>
+   </div>
+</div>
+
    
-   
-   
+   <!-- PROGRESS - Barra de progreso que informa gráficamente de el avance que llevas en el registro -->
+
+   <div class="progress">
+    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="d-flex justify-content-start mt-2">
+    <div class="mr-2">
+  </div>
+  </div>
+  
+  <div>
+
+    <!-- PAGINATION - mostraria las diferentes paginas de mazos del meta -->	
+
+    <ul class="pagination col-md-3 mx-auto">
+      <li class="page-item">
+        <button class="page-link" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+          <span class="sr-only">Previous</span>
+        </button>
+      </li>
+      <li class="page-item"><button class="page-link" id="botonpg1">1</button></li>
+      <li class="page-item"><button class="page-link" id="botonpg2">2</button></li>
+      <li class="page-item">
+        <button class="page-link" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+          <span class="sr-only">Next</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+      </div> 
+      <div class="col-md-3">
+      </div>
+    </div>
+  </div>
+   <!-- MEDIA OBJECT - se mostraria de forma resumida los datos de las cartas -->
+
+   <div class="media">
+    <img class="align-self-center mr-5 ml-2" src="img" alt="Profile Picture">
+    <div class="media-body">
+      <h5 class="my-4"><u>mazo trasgos mono rojo</u></h5>
+      <p class="my-3"><b>tierras</b> 20</p>
+      <p class="my-3"><b> hechizos:</b> 4</p>
+      <p class="my-3"><b>conjuros:</b> 8</p>
+      <p class="my-3"><b>instantaneos:</b> 8</p>
+      <p class="my-3"><b>criaturas:</b> 20</p>
+      <p class="my-3"><b>artefactos:</b> 0</p>
+      <p class="my-3"><b>sideboard:</b> 15</p>
+    </div>
+  </div>
+
+</div>
+<!-- TABLA - Tabla Bootstrap que muestra mazos -->
+
+<table class="table table-responsive table-hover table-striped table-bordered" id="tabla1">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Luvia de fuego</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>tierras</td>
+      <td>20</td>
+
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>artefactos</td>
+      <td>0</td>
+
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>hechizos</td>
+      <td>25</td>
+    </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>criaturas</td>
+        <td>15</td>
+      </tr>								    
+  </tbody>
+</table>
+</div>
+<div class="col-4">
+  <p class="font-weight-bold text-center">top 2</p>
+<table class="table table-responsive table-hover table-striped table-bordered" id="tabla2">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">del cementerio si se sale</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>tierras</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>artefactos</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>hechizos</td>
+      <td>15</td>
+    </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td> criaturas</td>
+        <td>20</td>
+      </tr>								    
+  </tbody>
+</table>
+</div>	
+<div class="col-4">
+  <p class="font-weight-bold text-center">top 3</p>
+<table class="table table-responsive table-hover table-striped table-bordered" id="tabla3">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">elfos de 3 en 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>tierras</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>artefactos</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>hechizos</td>
+      <td>8</td>
+    </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>criaturas</td>
+        <td>30</td>
+      </tr>								    
+  </tbody>
+</table>
+</div>											
+</div>    					
+</div>
+
+<div id="topsmazos">
+<div class="row-12">
+
    
    
    <!-- BREADCRUMB - Guía de en qué parte de la navegación de la página estás, con links directos a la parte de donde proviene la página actual -->
@@ -364,7 +614,16 @@
 			<div class="row">
 				<div class="col-md-12 mt-2">
 					<p class="text-center">&copy; Derechos y Propiedad a MTG.sa .</p>
-				</div>
+        </div>
+        <!-- ICONOS - Iconos de like y dislike, soportados por bootstrap -->
+
+        <small>Like  </small><i class="fa fa-thumbs-up"></i>
+      </div>
+      <div>	
+        <small>Dislike  </small><i class="fa fa-thumbs-down"></i>
+      </div>	
+  </div>  						
+  </button>
 			</div>
 		</footer>	
 </body>
